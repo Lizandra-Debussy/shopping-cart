@@ -5,7 +5,7 @@ const fetchProducts = async (termo) => {
   try {
     const response = await fetch(url);
     const data = await response.json();
-      console.log(data);
+      // console.log(data);
       return data;
   } catch (error) {
       return 'You must provide an url';
@@ -17,10 +17,3 @@ if (typeof module !== 'undefined') {
     fetchProducts,
   };
 }
-
-// function requestProducts() {
-//   fetchProducts('computador');
-// }
-
-// requestProducts();
-// console.log(fetchProducts('computador'));
