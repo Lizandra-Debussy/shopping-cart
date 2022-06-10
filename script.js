@@ -52,14 +52,13 @@ const getCartItem = async (id) => {
   saveCartItems(cartItems.innerHTML);
 };
 
-// Requisito 8 (incompleta)
+// Requisito 8
 const getLocalStorage = () => {
   const localStorage = getSavedCartItems();
-  console.log(localStorage);
-  // cartItems.innerHTML = localStorage;
-  // cartItems.childNodes.forEach((child) => {
-  //   child.addEventListener('click', cartItemClickListener);
-  // });
+  cartItems.innerHTML = localStorage;
+  cartItems.childNodes.forEach((child) => {
+    child.addEventListener('click', cartItemClickListener);
+  });
 };
 
 const addEventAddButtonCartItem = (button, id) => {
@@ -97,11 +96,7 @@ const emptyCart = () => {
   });
 };
 
-// Requisito 11: (incompleta)
-// const elementCarregando = document.createElement('span');
-// elementCarregando.className = 'loading';
-// elementCarregando.innerText = 'carregando';
-// console.log(elementCarregando);
+// Requisito 11: (incompleto)
 
 // const getSkuFromProductItem = (item) => item.querySelector('span.item__sku').innerText
 
@@ -110,3 +105,7 @@ getProduct('computador');
 getLocalStorage();
 emptyCart();
 };
+
+// Fontes:
+// Mentoria com Rosalia Oliveira
+// https://pt.stackoverflow.com/questions/487605/problema-com-o-m%C3%A9todo-tofixed-javascript
