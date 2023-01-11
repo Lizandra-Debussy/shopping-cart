@@ -87,7 +87,11 @@ const getProduct = async (termo) => {
 
 // Requisito 10
 const emptyCart = () => {
-  const button = document.querySelector('.empty-cart');
+  const cartClass = document.querySelector('.cart');
+  const button = document.createElement('button');
+  button.className = 'empty-cart';
+  button.innerText = 'Esvaziar carrinho';
+  cartClass.appendChild(button);
   button.addEventListener('click', function () {
     cartItems.innerHTML = '';
     sumItem = 0;
@@ -96,14 +100,24 @@ const emptyCart = () => {
   });
 };
 
-// Requisito 11: (incompleto)
-
-// const getSkuFromProductItem = (item) => item.querySelector('span.item__sku').innerText
+// Requisito 11
+const loading = async (computador) => {
+  const itensL = document.querySelector('.items');
+  const spanL = document.createElement('span');
+  spanL.className = 'loading';
+  spanL.innerHTML = 'carregando...';
+  itensL.appendChild(spanL);
+  
+  const products = await fetchProducts(computador);
+  document.querySelector('.loading').remove();
+  products.results.forEach((item) => createProductItemElement(item));
+};
 
 window.onload = () => {
 getProduct('computador');
 getLocalStorage();
 emptyCart();
+loading();
 };
 
 // Fontes:
