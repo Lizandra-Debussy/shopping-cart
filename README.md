@@ -4,7 +4,7 @@ Projeto desenvolvido durante o módulo de Front-End - Curso de Desenvolvimento W
 
 ## Objetivo
 
-Desenvolver uma aplicação de carrinho de compras utlizando HTML silmples, JavaScript e CSS. Nesse projeto os dados são consumidos diretamente da API do Mercado Livre para buscar produtos à venda além da implementação de testes voltado ao TDD.
+Desenvolver uma aplicação de carrinho de compras utlizando HTML silmples e JavaScript. Nesse projeto os dados são consumidos diretamente da API do Mercado Livre para buscar produtos à venda além da implementação de testes voltado ao TDD.
 
 ## Desenvolvimento
 
