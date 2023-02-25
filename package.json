@@ -6,8 +6,6 @@
   "scripts": {
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "cypress": "cypress run",
-    "cypress:open": "cypress open",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js",
     "lint:styles": "stylelint *.css --config .stylelintrc.json --ignore-disables --allow-empty-input",
     "serialize": "node -e 'require(\"./cypress/utils/testCoverage.js\").testCoverage()'"
@@ -35,8 +33,6 @@
   },
   "homepage": "https://github.com/betrybe/sd-0x-project-shopping-cart#readme",
   "dependencies": {
-    "cypress": "4.3.0",
-    "cypress-multi-reporters": "1.2.4",
     "eslint-config-trybe-fundamentals": "1.1.0",
     "jest": "24.9.0",
     "mocha": "7.1.1",
