@@ -1,13 +1,21 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Repositório do projeto Shopping Cart
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Projeto desenvolvido durante o módulo de Front-End - Curso de Desenvolvimento WEB - Trybe.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## Objetivo
+
+Desenvolver uma aplicação de carrinho de compras utlizando HTML silmples, JavaScript e CSS. Nesse projeto os dados são consumidos diretamente da API do Mercado Livre para buscar produtos à venda além da implementação de testes voltado ao TDD.
+
+## Desenvolvimento
+
+- (TDD) Desenvolva testes de no mínimo 25% de cobertura total e 100% da função fetchProducts
+- Crie uma listagem de produtos
+- (TDD) Desenvolva testes de no mínimo 50% de cobertura total e 100% da função fetchItem
+- Adicione o produto ao carrinho de compras
+- Remova o item do carrinho de compras ao clicar nele
+- (TDD) Desenvolva testes de no mínimo 75% de cobertura total e 100% da função saveCartItems
+- (TDD) Desenvolva testes para atingir 100% de cobertura total e 100% da função getSavedCartItems
+- Carregue o carrinho de compras ao iniciar a página
+- Calcule o valor total dos itens do carrinho de compras
+- Limpe o carrinho de compras
+- Adicione um texto de carregando durante uma requisição à API
